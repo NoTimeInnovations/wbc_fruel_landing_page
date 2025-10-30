@@ -1,160 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Warren's Barbecue Company & FRUEL</title>
-    <meta name="description" content="Warren's Barbecue Company & FRUEL - Family owned since 1995. Experience authentic BBQ daily.">
-    
+    <meta
+      name="description"
+      content="Warren's Barbecue Company & FRUEL - Family owned since 1995. Experience authentic BBQ daily."
+    />
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Font Awesome for Social Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-       <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'bbq-dark': '#1a1410',
-                        'bbq-rust': '#d97642',
-                        'bbq-ember': '#e55934',
-                        'bbq-wood': '#5c4a33',
-                        'fruel-cream': '#f5f0e8',
-                        'fruel-orange': '#ff8c00',
-                        'fruel-green': '#006837',
-                        'wbc-navy': '#FCFCFC',
-                        'wbc-gold': '#d4af37',
-                    }
-                }
-            }
-        }
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "bbq-dark": "#1a1410",
+              "bbq-rust": "#d97642",
+              "bbq-ember": "#e55934",
+              "bbq-wood": "#5c4a33",
+              "fruel-cream": "#f5f0e8",
+              "fruel-orange": "#ff8c00",
+              "fruel-green": "#006837",
+              "wbc-navy": "#FCFCFC",
+              "wbc-gold": "#d4af37",
+            },
+          },
+        },
+      };
     </script>
-    
+
     <style>
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
         }
-        
-        @keyframes scaleIn {
-            from {
-                opacity: 0;
-                transform: scale(0.95);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
+        to {
+          opacity: 1;
+          transform: translateY(0);
         }
-        
-        .animate-fade-in {
-            animation: fadeIn 0.6s ease-out;
+      }
+
+      @keyframes scaleIn {
+        from {
+          opacity: 0;
+          transform: scale(0.95);
         }
-        
-        .animate-scale-in {
-            animation: scaleIn 0.5s ease-out;
+        to {
+          opacity: 1;
+          transform: scale(1);
         }
-        
-        .bg-gradient-overlay {
-            background: linear-gradient(135deg, rgba(16, 16, 26, 0.9), rgba(20, 20, 30, 0.85));
-        }
-        
-        .shadow-glow {
-            box-shadow: 0 0 30px #FCFCFC;
-        }
-        
-        .shadow-soft {
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-        }
+      }
+
+      .animate-fade-in {
+        animation: fadeIn 0.6s ease-out;
+      }
+
+      .animate-scale-in {
+        animation: scaleIn 0.5s ease-out;
+      }
+
+      .bg-gradient-overlay {
+        background: linear-gradient(135deg, #fcfcfc6b, #e4e4e405);
+      }
+
+      .shadow-glow {
+        box-shadow: 0 0 30px #fcfcfc;
+      }
+
+      .shadow-soft {
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      }
     </style>
-</head>
-<body class="bg-bbq-dark text-gray-100">
+  </head>
+  <body class="bg-bbq-dark text-gray-100">
     <div class="relative h-screen w-full overflow-hidden">
-        <!-- Hero Background -->
-        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" 
-             style="background-image: url('./assets/bbq-hero.jpg');">
-            <div class="absolute inset-0 bg-gradient-overlay"></div>
-        </div>
+      <!-- Hero Background -->
+      <div
+        class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style="background-image: url('./assets/bbq-hero.jpg')"
+      >
+        <div class="absolute inset-0 bg-gradient-overlay"></div>
+      </div>
 
-        <!-- Content -->
-        <div class="relative z-10 flex min-h-screen flex-col items-center justify-center px-4 py-10 sm:px-6 lg:px-8">
-            <div class="w-full max-w-5xl space-y-8 text-center sm:space-y-12">
-                
-                <!-- Logos Section -->
-                <div class="flex items-center max-h-10 justify-center gap-4 sm:gap-8 animate-fade-in">
-                    <img src="./assets/wbc.png" 
-                         alt="Warren's Barbecue Company Logo"
-                         class="h-32 w-32 object-contain transition-transform duration-300 hover:scale-110 sm:h-40 sm:w-40 lg:h-48 lg:w-48">
-                    
-                    <span class="text-4xl font-bold text-bbq-rust sm:text-5xl lg:text-6xl">
-                        &
-                    </span>
-                    
-                    <img src="./assets/fruel.png" 
-                         alt="FRUEL Logo"
-                         class="h-32 w-32 object-contain transition-transform duration-300 hover:scale-110 sm:h-40 sm:w-40 lg:h-48 lg:w-48">
-                </div>
+      <!-- Content -->
+      <div
+        class="relative z-10 flex min-h-screen flex-col items-center justify-center px-4 py-10 sm:px-6 lg:px-8"
+      >
+        <div class="w-full max-w-5xl space-y-8 text-center sm:space-y-12">
+          <!-- Logos Section -->
+          <div
+            class="flex items-center max-h-10 justify-center gap-4 sm:gap-8 animate-fade-in"
+          >
+            <img
+              src="./assets/wbc.png"
+              alt="Warren's Barbecue Company Logo"
+              class="h-32 w-32 object-contain transition-transform duration-300 hover:scale-110 sm:h-40 sm:w-40 lg:h-48 lg:w-48"
+            />
 
-               <!-- Menu Buttons -->
-                <div class="flex flex-col sm:flex-row sm:justify-center items-center gap-4 sm:gap-8 animate-scale-in w-full">
-                    <a href="#fruel-menu"
-                       class="group relative overflow-hidden rounded-xl shadow-soft transition-all duration-300 hover:scale-105 hover:shadow-glow w-[90%] sm:max-w-sm">
-                        <img src="./assets/fruel_main_rect.png" 
-                             alt="FRUEL Menu"
-                             class="w-full sm:h-48  object-cover transition-transform duration-300 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
-                    </a>
-                    
-                    <a href="#wbc-menu"
-                       class="group relative overflow-hidden rounded-xl shadow-soft transition-all duration-300 hover:scale-105 hover:shadow-glow w-[90%] sm:max-w-sm">
-                        <img src="./assets/wbc_main_rect.png"
-                             alt="Warren's Barbecue Company Menu"
-                             class="w-full sm:h-48  object-cover transition-transform duration-300 group-hover:scale-110">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
-                    </a>
-                </div>
+            <span
+              class="text-4xl font-bold text-bbq-rust sm:text-5xl lg:text-6xl"
+            >
+              &
+            </span>
 
-                <!-- Social Icons -->
-                <div class="flex justify-center gap-6 sm:gap-8 animate-fade-in">
-                    <a href="https://facebook.com"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="group flex h-12 w-12 items-center justify-center rounded-full bg-wbc-navy transition-all duration-300 hover:bg-wbc-navy hover:shadow-glow sm:h-14 sm:w-14"
-                       aria-label="Visit our Facebook page">
-                        <i class="fab fa-facebook-f text-gray-900 group-hover:text-gray-700 text-xl"></i>
-                    </a>
-                    
-                    <a href="https://instagram.com"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="group flex h-12 w-12 items-center justify-center rounded-full bg-wbc-navy transition-all duration-300 hover:bg-wbc-navy hover:shadow-glow sm:h-14 sm:w-14"
-                       aria-label="Visit our Instagram page">
-                        <i class="fab fa-instagram text-gray-900 group-hover:text-gray-700 text-xl"></i>
-                    </a>
-                    
-                    <a href="https://twitter.com"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="group flex h-12 w-12 items-center justify-center rounded-full bg-wbc-navy transition-all duration-300 hover:bg-wbc-navy hover:shadow-glow sm:h-14 sm:w-14"
-                       aria-label="Visit our Twitter page">
-                        <i class="fab fa-twitter text-gray-900 group-hover:text-gray-700 text-xl"></i>
-                    </a>
-                </div>
+            <img
+              src="./assets/fruel.png"
+              alt="FRUEL Logo"
+              class="h-32 w-32 object-contain transition-transform duration-300 hover:scale-110 sm:h-40 sm:w-40 lg:h-48 lg:w-48"
+            />
+          </div>
 
-                <!-- Footer Info -->
-                <!-- <p class="text-lg font-medium text-gray-100 sm:text-xl lg:text-2xl animate-fade-in">
+          <!-- Menu Buttons -->
+          <div
+            class="flex flex-col sm:flex-row sm:justify-center items-center gap-4 sm:gap-8 animate-scale-in w-full"
+          >
+            <a
+              href="#fruel-menu"
+              class="group relative overflow-hidden rounded-xl shadow-soft transition-all duration-300 hover:scale-105 hover:shadow-glow w-[90%] sm:max-w-sm"
+            >
+              <img
+                src="./assets/fruel_main_rect.png"
+                alt="FRUEL Menu"
+                class="w-full sm:h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              ></div>
+            </a>
+
+            <a
+              href="#wbc-menu"
+              class="group relative overflow-hidden rounded-xl shadow-soft transition-all duration-300 hover:scale-105 hover:shadow-glow w-[90%] sm:max-w-sm"
+            >
+              <img
+                src="./assets/wbc_main_rect.png"
+                alt="Warren's Barbecue Company Menu"
+                class="w-full sm:h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+              ></div>
+            </a>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="flex justify-center gap-6 sm:gap-8 animate-fade-in">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group flex h-12 w-12 items-center justify-center rounded-full bg-wbc-navy transition-all duration-300 hover:bg-wbc-navy hover:shadow-glow sm:h-14 sm:w-14"
+              aria-label="Visit our Facebook page"
+            >
+              <i
+                class="fab fa-facebook-f text-gray-900 group-hover:text-gray-700 text-xl"
+              ></i>
+            </a>
+
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group flex h-12 w-12 items-center justify-center rounded-full bg-wbc-navy transition-all duration-300 hover:bg-wbc-navy hover:shadow-glow sm:h-14 sm:w-14"
+              aria-label="Visit our Instagram page"
+            >
+              <i
+                class="fab fa-instagram text-gray-900 group-hover:text-gray-700 text-xl"
+              ></i>
+            </a>
+
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group flex h-12 w-12 items-center justify-center rounded-full bg-wbc-navy transition-all duration-300 hover:bg-wbc-navy hover:shadow-glow sm:h-14 sm:w-14"
+              aria-label="Visit our Twitter page"
+            >
+              <i
+                class="fab fa-twitter text-gray-900 group-hover:text-gray-700 text-xl"
+              ></i>
+            </a>
+          </div>
+
+          <!-- Footer Info -->
+          <!-- <p class="text-lg font-medium text-gray-100 sm:text-xl lg:text-2xl animate-fade-in">
                     Open Daily · Family Owned Since 1995
                 </p> -->
-            </div>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
